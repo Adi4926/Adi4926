@@ -1,5 +1,5 @@
 ## Hi there 👋
-
+[![GitHub Streak](https://streak-stats.demolab.com?user=Adi4926)](https://git.io/streak-stats)
 <!--
 **Adi4926/Adi4926** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
