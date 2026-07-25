@@ -1,5 +1,5 @@
 # 💫 About Me:
-🚀 Aspiring Full Stack Web Developer<br>🌱 Currently learning MERN Stack<br>💻 Passionate about Web Development<br>🎯 Goal: Become a Full Stack Develope
+🚀 Aspiring Full Stack Web Developer<br>🌱 Currently learning MERN Stack<br>💻 Passionate about Web Development<br>🎯 Goal: Become a Full Stack Developer
 
 
 ## 🌐 Socials:
