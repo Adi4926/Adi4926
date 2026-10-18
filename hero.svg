@@ -1,63 +1,56 @@
-<svg fill="none" viewBox="0 0 800 220" width="100%" height="220" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .glow-border { stroke: url(#border-grad); stroke-width: 1.5; fill: none; rx: 16px; }
-    .badge-bg { fill: rgba(16, 185, 129, 0.12); stroke: rgba(16, 185, 129, 0.35); stroke-width: 1; rx: 13px; }
-    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 700; fill: #10b981; letter-spacing: 1.5px; }
-    .name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 34px; font-weight: 800; fill: url(#name-grad); }
-    .role { font-family: 'Courier New', monospace, -apple-system; font-size: 15px; fill: #94a3b8; }
-    .meta { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; fill: #64748b; }
-    .accent { fill: #38bdf8; font-weight: bold; }
-
-    /* Live pulsing dot */
-    @keyframes pulse {
-      0% { r: 4px; opacity: 1; }
-      50% { r: 6.5px; opacity: 0.4; }
-      100% { r: 4px; opacity: 1; }
-    }
-    .pulse-circle {
-      animation: pulse 2s infinite ease-in-out;
-    }
-
-    /* Subtle neon shimmer */
-    @keyframes shimmer {
-      0% { stop-color: #38bdf8; }
-      50% { stop-color: #c084fc; }
-      100% { stop-color: #38bdf8; }
-    }
-    #stop1 { animation: shimmer 4s infinite ease-in-out; }
-  </style>
-
+<svg width="800" height="220" viewBox="0 0 800 220" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="card-bg" x1="0" y1="0" x2="800" y2="220" gradientUnits="userSpaceOnUse">
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0b0f19" />
       <stop offset="100%" stop-color="#111827" />
     </linearGradient>
 
     <!-- Glowing Text Gradient -->
     <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop id="stop1" offset="0%" stop-color="#38bdf8" />
+      <stop offset="0%" stop-color="#38bdf8" />
       <stop offset="50%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#f472b6" />
     </linearGradient>
 
     <!-- Border Glow Gradient -->
     <linearGradient id="border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.7" />
-      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.5" />
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.6" />
     </linearGradient>
   </defs>
 
-  <!-- Background Base -->
-  <rect width="800" height="220" fill="url(#card-bg)" rx="16" />
-  <rect width="800" height="220" class="glow-border" />
+  <style>
+    <![CDATA[
+    .glow-border { stroke: url(#border-grad); stroke-width: 1.5; fill: none; rx: 16px; }
+    .badge-bg { fill: rgba(16, 185, 129, 0.12); stroke: rgba(16, 185, 129, 0.35); stroke-width: 1; rx: 13px; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 700; fill: #10b981; letter-spacing: 1.5px; }
+    .name { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 34px; font-weight: 800; fill: url(#name-grad); }
+    .role { font-family: monospace, -apple-system; font-size: 15px; fill: #94a3b8; }
+    .meta { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 13px; fill: #64748b; }
+    .accent { fill: #38bdf8; font-weight: bold; }
 
-  <!-- Corner Tech Brackets (Cyberpunk/Camera viewfinder style) -->
+    @keyframes pulse {
+      0% { r: 4px; opacity: 1; }
+      50% { r: 6px; opacity: 0.3; }
+      100% { r: 4px; opacity: 1; }
+    }
+    .pulse-circle {
+      animation: pulse 2s infinite ease-in-out;
+    }
+    ]]>
+  </style>
+
+  <!-- Background Base -->
+  <rect width="800" height="220" rx="16" fill="url(#card-bg)" />
+  <rect width="800" height="220" rx="16" class="glow-border" />
+
+  <!-- Viewfinder Aesthetic Corner Marks -->
   <path d="M 720 36 L 756 36 L 756 72" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6" />
   <path d="M 756 148 L 756 184 L 720 184" stroke="#f472b6" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6" />
-  <text x="696" y="52" font-family="&#39;Courier New&#39;, monospace" font-size="11" fill="#38bdf8" opacity="0.8">REC ●</text>
-  <text x="630" y="178" font-family="&#39;Courier New&#39;, monospace" font-size="11" fill="#64748b">PORTFOLIO v2.0</text>
+  <text x="696" y="52" font-family="monospace" font-size="11" fill="#38bdf8" opacity="0.8">REC ●</text>
+  <text x="630" y="178" font-family="monospace" font-size="11" fill="#64748b">PORTFOLIO v2.0</text>
 
   <!-- Status Pill Badge -->
   <g transform="translate(40, 32)">
@@ -76,6 +69,6 @@
 
   <!-- Details Row -->
   <text x="40" y="175" class="meta">
-    📍 Lucknow, India   •   Crafting fast, responsive web experiences
+    Lucknow, India   •   Crafting fast, responsive web experiences
   </text>
 </svg>
