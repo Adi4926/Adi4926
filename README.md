@@ -1,5 +1,6 @@
-# 💫 About Me:
-🚀 Aspiring Full Stack Web Developer<br>🌱 Currently learning MERN Stack<br>💻 Passionate about Web Development<br>🎯 Goal:  Become a Full Stack Developer
+<p align="center">
+  <img src="./hero.svg" alt="Aditya Verma Header" width="100%" />
+</p>
 
 
 ## 🌐 Socials:
